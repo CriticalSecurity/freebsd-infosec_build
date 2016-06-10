@@ -34,6 +34,7 @@ if [ -f $BSDINSTALL_TMPETC/rc.conf.services ]; then
 else
 	# Default service states. Everything is off if not enabled.
 	sshd_enable="on"
+	ntpd_enable="on"
 fi
 
 echo -n > $BSDINSTALL_TMPETC/rc.conf.services
