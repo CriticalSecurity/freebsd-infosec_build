@@ -836,7 +836,7 @@ input_interactive() {
 #### END SUBROUTINE DEFINITION ####
 
 THISCMD=`/usr/bin/basename $0`
-DEFAULTSHELL=/bin/sh
+DEFAULTSHELL=/bin/csh
 ADDUSERCONF="${ADDUSERCONF:-/etc/adduser.conf}"
 PWCMD="${PWCMD:-/usr/sbin/pw}"
 MAILCMD="${MAILCMD:-mail}"
