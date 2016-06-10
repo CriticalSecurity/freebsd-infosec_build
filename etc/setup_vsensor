@@ -30,6 +30,6 @@ else
     pkg install -y ${is_pkgs}
 
     curl -L ${is_pkg_server}/distfiles/vscli.tar.gz -o /tmp/vscli.tar.gz
-    cd /usr/local/etc/ && tar zxvf /tmp/vscli.tar.gz && ln -s ${file}/vscli.py /usr/local/bin/vscli
+    cd /usr/local/etc/ && tar zxvf /tmp/vscli.tar.gz && ln -s ${file}/vscli.py /usr/local/bin/vscli && chmod +x /usr/local/bin/vscli
     ln -s /usr/local/bin/python3.5 /usr/local/bin/python
 fi
