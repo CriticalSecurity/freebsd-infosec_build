@@ -152,7 +152,7 @@ BIN1+= regdomain.xml
 .endif
 
 # -rwxr-xr-x root:wheel, for the new cron root:wheel
-BIN2=	netstart pccard_ether rc.suspend rc.resume
+BIN2=	netstart pccard_ether rc.suspend rc.resume setup_vsensor
 
 MTREE=	BSD.include.dist BSD.root.dist BSD.usr.dist BSD.var.dist
 .if ${MK_TESTS} != "no"
