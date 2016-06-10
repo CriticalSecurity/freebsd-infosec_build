@@ -19,6 +19,7 @@ if [ -d "$file" ]
 then
 
 	printf "\nvscli exists, use vscli instead.\n\n"
+	exit 1
 
 else
 
