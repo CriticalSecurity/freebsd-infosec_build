@@ -34,5 +34,5 @@ else
     ln -s /usr/local/bin/python3.5 /usr/local/bin/python
     rm -rf /tmp/vscli.tar.gz
     echo "%wheel ALL=(ALL) ALL" >> /usr/local/etc/sudoers
-    echo 'You can now use vscli as a standard user, please logoff root.'
+    echo 'You can now use vscli as a standard user, please logoff root.\n'
 fi
