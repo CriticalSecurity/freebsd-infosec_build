@@ -26,10 +26,13 @@ else
     echo "Installing prerequisites"
     sleep 5
 
-    is_pkgs="curl python35"
+    is_pkgs="curl python35 sudo nano"
     pkg install -y ${is_pkgs}
 
     curl -L ${is_pkg_server}/distfiles/vscli.tar.gz -o /tmp/vscli.tar.gz
-    cd /usr/local/etc/ && tar zxvf /tmp/vscli.tar.gz && ln -s ${file}/vscli.py /usr/local/bin/vscli && chmod +x /usr/local/bin/vscli
+    cd /usr/local/etc/ && tar zxf /tmp/vscli.tar.gz && ln -s ${file}/vscli.py /usr/local/bin/vscli && chmod +x /usr/local/bin/vscli
     ln -s /usr/local/bin/python3.5 /usr/local/bin/python
+    rm -rf /tmp/vscli.tar.gz
+    echo "%wheel ALL=(ALL) ALL" >> /usr/local/etc/sudoers
+    echo 'You can now use vscli as a standard user, please logoff root.'
 fi
