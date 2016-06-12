@@ -33,6 +33,6 @@ else
     cd /usr/local/etc/ && tar zxf /tmp/vscli.tar.gz && ln -s ${file}/vscli.py /usr/local/bin/vscli && chmod +x /usr/local/bin/vscli
     ln -s /usr/local/bin/python3.5 /usr/local/bin/python
     rm -rf /tmp/vscli.tar.gz
-    echo "%wheel ALL=(ALL) ALL" >> /usr/local/etc/sudoers
+    echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /usr/local/etc/sudoers
     printf '\nYou can now use vscli as a standard user, please logoff root.\n\n'
 fi
