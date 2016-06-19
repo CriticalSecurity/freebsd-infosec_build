@@ -26,7 +26,7 @@ else
     echo "Installing prerequisites"
     sleep 5
 
-    is_pkgs="curl python35 sudo nano"
+    is_pkgs="curl python35 py35-sqlite3-3.5.1_7 sudo nano"
     pkg install -y ${is_pkgs}
 
     curl -L ${is_pkg_server}/distfiles/vscli.tar.gz -o /tmp/vscli.tar.gz
